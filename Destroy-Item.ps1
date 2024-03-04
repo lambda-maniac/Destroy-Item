@@ -53,7 +53,6 @@ function Perform-Randomization([Byte[]] $Buffer)
     $Script:RNG.GetBytes($Buffer)
 }
 
-
 if (-not (Test-Path -Path:$Path -Type:Leaf)) {
     Write-Host "[Error] Destroy-Item: File `"$FilePath`" is not a valid path."
     return
